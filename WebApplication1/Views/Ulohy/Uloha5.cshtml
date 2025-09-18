@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewData["Title"] = "Uloha5";
+}
+
+<div class="text-center uloha5-container">
+    @foreach (var user in Model)
+    {
+        <partial name="_UserCard" model="user" />
+    }
+</div>

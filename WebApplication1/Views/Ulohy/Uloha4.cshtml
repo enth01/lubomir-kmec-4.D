@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Uloha4";
+}
+
+<div class="text-center">
+
+    <h1>Používatelia</h1>
+
+    <div class="uloha4">
+
+        <div class="uloha4-header">
+            <div>Meno</div>
+            <div>Priezvisko</div>
+            <div>Email</div>
+        </div>
+        <div class="uloha4-content">
+            @foreach (var user in Model)
+            {   
+                <div class="uloha4-obal">
+                    <div>@user.Name</div>
+                    <div>@user.Surname</div>
+                    <div>@user.Email</div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
