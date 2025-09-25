@@ -1,6 +1,8 @@
 ﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 // for details on configuring this project to bundle and minify static web assets.
 
+//const { eventListeners } = require("@popperjs/core");
+
 // Write your JavaScript code.
 
 function zobraz_skry(){
@@ -33,4 +35,19 @@ if (textarea) {
             textarea.classList.remove("ok");
         }
     })
+}
+
+
+function pridaj() {
+    let choroba = document.getElementById("choroba").value;
+    let zobrazChoroby = document.getElementById("zobrazChoroby");
+    let chorobyInput = document.getElementById("chorobyInput");
+
+    zobrazChoroby.innerHTML = zobrazChoroby.innerHTML + "<div>" + choroba + "</div>"
+    if (chorobyInput.value == "") {
+        chorobyInput.value = choroba;
+    } else {
+        chorobyInput.value = chorobyInput.value + "," + choroba;
+    }
+    console.log(chorobyInput.value);
 }

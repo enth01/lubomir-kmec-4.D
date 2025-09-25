@@ -125,6 +125,9 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+
+        private static List<User> _users = new List<User>();
+
         [HttpGet]
         public IActionResult Uloha9()
         {
@@ -134,7 +137,11 @@ namespace WebApplication1.Controllers
         [HttpPost]
         public IActionResult Uloha9(User user)
         {
-            return View("Uloha9result", user);
+            if (ModelState.IsValid)
+            {
+                _users.Add(user);
+            }
+            return View("Uloha9result", _users);
         }
     }
 }
