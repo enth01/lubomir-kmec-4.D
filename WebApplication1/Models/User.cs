@@ -8,8 +8,16 @@ namespace WebApplication1.Models
         public required string Email { get; set; }
         public required int Tel { get; set; }
         public required string Address { get; set; }
-        //public required List<string> ChorobyInput { get; set; } = new List<string>();
-        public required string ChorobyInput { get; set; }
-        //public required List<string> ChorobyList { get; set; } = ChorobyInput.Split(',').ToList();
+        
+        private string _ch = string.Empty;
+        public required string ChorobyInput {
+            get => _ch;
+            set => _ch = value;
+        }
+
+        public List<string> ChorobyList
+        {
+            get => _ch.Split(',').ToList();
+        }
     }
 }
