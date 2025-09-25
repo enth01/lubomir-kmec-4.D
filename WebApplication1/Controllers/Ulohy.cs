@@ -124,5 +124,17 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public IActionResult Uloha9()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Uloha9(User user)
+        {
+            return View("Uloha9result", user);
+        }
     }
 }
