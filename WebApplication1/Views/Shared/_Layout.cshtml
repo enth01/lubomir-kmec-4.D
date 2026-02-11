@@ -1,79 +1,80 @@
-﻿<!DOCTYPE html>
+﻿@using Common.Dto
+@inject biznis.Interfaces.Services.IUserService UserService
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - WebApplication1</title>
+
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    @RenderSection("Styles", required: false)
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">WebApplication1</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Ulohy" asp-action="Uloha1">Uloha1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Ulohy" asp-action="Uloha2">Uloha2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Ulohy" asp-action="Uloha3">Uloha3</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Ulohy" asp-action="Uloha4">Uloha4</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Ulohy" asp-action="Uloha5">Uloha5</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Ulohy" asp-action="Uloha6">Uloha6</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Ulohy" asp-action="Uloha7">Uloha7</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Ulohy" asp-action="Uloha8">Uloha8</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Ulohy" asp-action="Uloha9">Uloha9</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="User">User</a>
-                        </li>
-                    </ul>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light border-bottom mb-3">
+            <div class="container">
+                <div class="navbar-nav">
+                    <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+
+                    @{
+                        string? userId = Context.Request.Cookies["UserPublicId"];
+                        bool isAdmin = false;
+
+                        if (!string.IsNullOrEmpty(userId))
+                        {
+                            var user = await UserService.GetByPublicIdAsync(Guid.Parse(userId));
+                            if (user != null)
+                            {
+                                isAdmin = user.Role == Common.Enum.RoleEnum.admin;
+                            }
+                        }
+                    }
+
+                    @if (!string.IsNullOrEmpty(userId))
+                    {
+                        <a class="nav-link" asp-controller="User" asp-action="Profile">Profile</a>
+                        <a class="nav-link" asp-controller="Products" asp-action="Products">Products</a>
+                        <form asp-controller="Products" asp-action="Cart" method="post" class="d-inline">
+                            <input type="hidden" name="id" value=userId />
+                            <button type="submit" class="btn btn-link nav-link">Cart</button>
+                        </form>
+
+
+                        @if (isAdmin)
+                        {
+                            <a class="nav-link" asp-controller="Admin" asp-action="Dashboard">Dashboard</a>
+                        }
+
+                        <form asp-controller="User" asp-action="Logout" method="post" class="d-inline">
+                            <button type="submit" class="btn btn-link nav-link">Logout</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <a class="nav-link" asp-controller="User" asp-action="Login">Login</a>
+                        <a class="nav-link" asp-controller="User" asp-action="Register">Register</a>
+                    }
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - WebApplication1 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <main role="main" class="container">
+        @RenderBody()
+    </main>
+
+    <footer class="border-top footer text-muted mt-5">
+        <div class="container text-center">
+            &copy; @DateTime.Now.Year - WebApplication1
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

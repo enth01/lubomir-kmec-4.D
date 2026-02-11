@@ -1,9 +1,9 @@
-namespace WebApplication1.Models
+﻿namespace Common.Dto
 {
-    public class User
+    public class UserAdminDto
     {
         public Guid PublicId { get; set; }
-        public string Name { get; set; }
         public string Email { get; set; }
+        public string Role { get; set; }
     }
 }

@@ -1,0 +1,11 @@
+﻿@model Common.Dto.UserCreateDto
+
+<form method="post">
+    <label asp-for="Name">Name:</label>
+    <input asp-for="Name" />
+    <label asp-for="Email">Email:</label>
+    <input asp-for="Email" />
+    <label asp-for="Password">Password:</label>
+    <input asp-for="Password" type="password" />
+    <button type="submit">Register</button>
+</form>

@@ -1,0 +1,595 @@
+WebApplication1
+ ┣ biznis
+ ┃ ┣ bin
+ ┃ ┃ ┣ Debug
+ ┃ ┃ ┃ ┗ net8.0
+ ┃ ┃ ┃ ┃ ┣ biznis.deps.json
+ ┃ ┃ ┃ ┃ ┣ biznis.dll
+ ┃ ┃ ┃ ┃ ┣ biznis.pdb
+ ┃ ┃ ┃ ┃ ┣ biznis.runtimeconfig.json
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.dll
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.pdb
+ ┃ ┃ ┃ ┃ ┣ Common.dll
+ ┃ ┃ ┃ ┃ ┗ Common.pdb
+ ┃ ┃ ┗ Release
+ ┃ ┃ ┃ ┗ net8.0
+ ┃ ┣ Interfaces
+ ┃ ┃ ┣ Repository
+ ┃ ┃ ┃ ┣ IBaseRepository.cs
+ ┃ ┃ ┃ ┗ IUserRepository.cs
+ ┃ ┃ ┗ Services
+ ┃ ┃ ┃ ┗ IUserService.cs
+ ┃ ┣ obj
+ ┃ ┃ ┣ Debug
+ ┃ ┃ ┃ ┗ net8.0
+ ┃ ┃ ┃ ┃ ┣ ref
+ ┃ ┃ ┃ ┃ ┃ ┗ biznis.dll
+ ┃ ┃ ┃ ┃ ┣ refint
+ ┃ ┃ ┃ ┃ ┃ ┗ biznis.dll
+ ┃ ┃ ┃ ┃ ┣ .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+ ┃ ┃ ┃ ┃ ┣ biznis.AssemblyInfo.cs
+ ┃ ┃ ┃ ┃ ┣ biznis.AssemblyInfoInputs.cache
+ ┃ ┃ ┃ ┃ ┣ biznis.assets.cache
+ ┃ ┃ ┃ ┃ ┣ biznis.csproj.AssemblyReference.cache
+ ┃ ┃ ┃ ┃ ┣ biznis.csproj.BuildWithSkipAnalyzers
+ ┃ ┃ ┃ ┃ ┣ biznis.csproj.CoreCompileInputs.cache
+ ┃ ┃ ┃ ┃ ┣ biznis.csproj.FileListAbsolute.txt
+ ┃ ┃ ┃ ┃ ┣ biznis.csproj.Up2Date
+ ┃ ┃ ┃ ┃ ┣ biznis.dll
+ ┃ ┃ ┃ ┃ ┣ biznis.GeneratedMSBuildEditorConfig.editorconfig
+ ┃ ┃ ┃ ┃ ┣ biznis.genruntimeconfig.cache
+ ┃ ┃ ┃ ┃ ┣ biznis.GlobalUsings.g.cs
+ ┃ ┃ ┃ ┃ ┣ biznis.pdb
+ ┃ ┃ ┃ ┃ ┗ biznis.sourcelink.json
+ ┃ ┃ ┣ Release
+ ┃ ┃ ┃ ┗ net8.0
+ ┃ ┃ ┃ ┃ ┣ ref
+ ┃ ┃ ┃ ┃ ┣ refint
+ ┃ ┃ ┃ ┃ ┣ .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+ ┃ ┃ ┃ ┃ ┣ biznis.AssemblyInfo.cs
+ ┃ ┃ ┃ ┃ ┣ biznis.AssemblyInfoInputs.cache
+ ┃ ┃ ┃ ┃ ┣ biznis.assets.cache
+ ┃ ┃ ┃ ┃ ┣ biznis.csproj.AssemblyReference.cache
+ ┃ ┃ ┃ ┃ ┣ biznis.GeneratedMSBuildEditorConfig.editorconfig
+ ┃ ┃ ┃ ┃ ┗ biznis.GlobalUsings.g.cs
+ ┃ ┃ ┣ biznis.csproj.nuget.dgspec.json
+ ┃ ┃ ┣ biznis.csproj.nuget.g.props
+ ┃ ┃ ┣ biznis.csproj.nuget.g.targets
+ ┃ ┃ ┣ project.assets.json
+ ┃ ┃ ┗ project.nuget.cache
+ ┃ ┣ Repository
+ ┃ ┃ ┣ BaseRepository.cs
+ ┃ ┃ ┗ UserRepository.cs
+ ┃ ┣ Services
+ ┃ ┃ ┗ UserService.cs
+ ┃ ┣ biznis.csproj
+ ┃ ┗ Class1.cs
+ ┣ ClassLibrary1
+ ┃ ┣ bin
+ ┃ ┃ ┣ Debug
+ ┃ ┃ ┃ ┗ net8.0
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.deps.json
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.dll
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.pdb
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.runtimeconfig.json
+ ┃ ┃ ┃ ┃ ┣ Common.dll
+ ┃ ┃ ┃ ┃ ┣ Common.pdb
+ ┃ ┃ ┃ ┃ ┣ DataLayer.deps.json
+ ┃ ┃ ┃ ┃ ┣ DataLayer.dll
+ ┃ ┃ ┃ ┃ ┣ DataLayer.pdb
+ ┃ ┃ ┃ ┃ ┗ DataLayer.runtimeconfig.json
+ ┃ ┃ ┗ Release
+ ┃ ┃ ┃ ┗ net8.0
+ ┃ ┣ Entities
+ ┃ ┃ ┣ BaseEntity.cs
+ ┃ ┃ ┣ CartItemEntity.cs
+ ┃ ┃ ┣ CommentEntity.cs
+ ┃ ┃ ┣ OrderEntity.cs
+ ┃ ┃ ┣ ProductEntity.cs
+ ┃ ┃ ┣ UserAddressEntity.cs
+ ┃ ┃ ┗ UserEntity.cs
+ ┃ ┣ obj
+ ┃ ┃ ┣ Debug
+ ┃ ┃ ┃ ┗ net8.0
+ ┃ ┃ ┃ ┃ ┣ ref
+ ┃ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.dll
+ ┃ ┃ ┃ ┃ ┃ ┗ DataLayer.dll
+ ┃ ┃ ┃ ┃ ┣ refint
+ ┃ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.dll
+ ┃ ┃ ┃ ┃ ┃ ┗ DataLayer.dll
+ ┃ ┃ ┃ ┃ ┣ .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+ ┃ ┃ ┃ ┃ ┣ ClassL.AssemblyInfo.cs
+ ┃ ┃ ┃ ┃ ┣ ClassL.AssemblyInfoInputs.cache
+ ┃ ┃ ┃ ┃ ┣ ClassL.assets.cache
+ ┃ ┃ ┃ ┃ ┣ ClassL.csproj.AssemblyReference.cache
+ ┃ ┃ ┃ ┃ ┣ ClassL.GeneratedMSBuildEditorConfig.editorconfig
+ ┃ ┃ ┃ ┃ ┣ ClassL.GlobalUsings.g.cs
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.AssemblyInfo.cs
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.AssemblyInfoInputs.cache
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.assets.cache
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.csproj.AssemblyReference.cache
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.csproj.BuildWithSkipAnalyzers
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.csproj.CoreCompileInputs.cache
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.csproj.FileListAbsolute.txt
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.dll
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.GeneratedMSBuildEditorConfig.editorconfig
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.genruntimeconfig.cache
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.GlobalUsings.g.cs
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.pdb
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.sourcelink.json
+ ┃ ┃ ┃ ┃ ┣ DataLayer.AssemblyInfo.cs
+ ┃ ┃ ┃ ┃ ┣ DataLayer.AssemblyInfoInputs.cache
+ ┃ ┃ ┃ ┃ ┣ DataLayer.assets.cache
+ ┃ ┃ ┃ ┃ ┣ DataLayer.csproj.AssemblyReference.cache
+ ┃ ┃ ┃ ┃ ┣ DataLayer.csproj.CoreCompileInputs.cache
+ ┃ ┃ ┃ ┃ ┣ DataLayer.csproj.FileListAbsolute.txt
+ ┃ ┃ ┃ ┃ ┣ DataLayer.csproj.Up2Date
+ ┃ ┃ ┃ ┃ ┣ DataLayer.dll
+ ┃ ┃ ┃ ┃ ┣ DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+ ┃ ┃ ┃ ┃ ┣ DataLayer.genruntimeconfig.cache
+ ┃ ┃ ┃ ┃ ┣ DataLayer.GlobalUsings.g.cs
+ ┃ ┃ ┃ ┃ ┣ DataLayer.pdb
+ ┃ ┃ ┃ ┃ ┗ DataLayer.sourcelink.json
+ ┃ ┃ ┣ Release
+ ┃ ┃ ┃ ┗ net8.0
+ ┃ ┃ ┃ ┃ ┣ ref
+ ┃ ┃ ┃ ┃ ┣ refint
+ ┃ ┃ ┃ ┃ ┣ .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.AssemblyInfo.cs
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.AssemblyInfoInputs.cache
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.assets.cache
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.csproj.AssemblyReference.cache
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.GeneratedMSBuildEditorConfig.editorconfig
+ ┃ ┃ ┃ ┃ ┗ ClassLibrary1.GlobalUsings.g.cs
+ ┃ ┃ ┣ ClassL.csproj.nuget.dgspec.json
+ ┃ ┃ ┣ ClassL.csproj.nuget.g.props
+ ┃ ┃ ┣ ClassL.csproj.nuget.g.targets
+ ┃ ┃ ┣ ClassLibrary1.csproj.nuget.dgspec.json
+ ┃ ┃ ┣ ClassLibrary1.csproj.nuget.g.props
+ ┃ ┃ ┣ ClassLibrary1.csproj.nuget.g.targets
+ ┃ ┃ ┣ DataLayer.csproj.nuget.dgspec.json
+ ┃ ┃ ┣ DataLayer.csproj.nuget.g.props
+ ┃ ┃ ┣ DataLayer.csproj.nuget.g.targets
+ ┃ ┃ ┣ project.assets.json
+ ┃ ┃ ┗ project.nuget.cache
+ ┃ ┣ appdata.db
+ ┃ ┣ appdata.db-shm
+ ┃ ┣ appdata.db-wal
+ ┃ ┣ AppDbContext.cs
+ ┃ ┣ Class1.cs
+ ┃ ┗ ClassLibrary1.csproj
+ ┣ Common
+ ┃ ┣ bin
+ ┃ ┃ ┣ Debug
+ ┃ ┃ ┃ ┗ net8.0
+ ┃ ┃ ┃ ┃ ┣ Common.deps.json
+ ┃ ┃ ┃ ┃ ┣ Common.dll
+ ┃ ┃ ┃ ┃ ┣ Common.pdb
+ ┃ ┃ ┃ ┃ ┗ Common.runtimeconfig.json
+ ┃ ┃ ┗ Release
+ ┃ ┃ ┃ ┗ net8.0
+ ┃ ┣ Enum
+ ┃ ┃ ┣ CategoryEnum.cs
+ ┃ ┃ ┣ RoleEnum.cs
+ ┃ ┃ ┗ StatusEnum.cs
+ ┃ ┣ Models
+ ┃ ┃ ┗ User.cs
+ ┃ ┣ obj
+ ┃ ┃ ┣ Debug
+ ┃ ┃ ┃ ┗ net8.0
+ ┃ ┃ ┃ ┃ ┣ ref
+ ┃ ┃ ┃ ┃ ┃ ┗ Common.dll
+ ┃ ┃ ┃ ┃ ┣ refint
+ ┃ ┃ ┃ ┃ ┃ ┗ Common.dll
+ ┃ ┃ ┃ ┃ ┣ .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+ ┃ ┃ ┃ ┃ ┣ Common.AssemblyInfo.cs
+ ┃ ┃ ┃ ┃ ┣ Common.AssemblyInfoInputs.cache
+ ┃ ┃ ┃ ┃ ┣ Common.assets.cache
+ ┃ ┃ ┃ ┃ ┣ Common.csproj.AssemblyReference.cache
+ ┃ ┃ ┃ ┃ ┣ Common.csproj.BuildWithSkipAnalyzers
+ ┃ ┃ ┃ ┃ ┣ Common.csproj.CoreCompileInputs.cache
+ ┃ ┃ ┃ ┃ ┣ Common.csproj.FileListAbsolute.txt
+ ┃ ┃ ┃ ┃ ┣ Common.dll
+ ┃ ┃ ┃ ┃ ┣ Common.GeneratedMSBuildEditorConfig.editorconfig
+ ┃ ┃ ┃ ┃ ┣ Common.genruntimeconfig.cache
+ ┃ ┃ ┃ ┃ ┣ Common.GlobalUsings.g.cs
+ ┃ ┃ ┃ ┃ ┣ Common.pdb
+ ┃ ┃ ┃ ┃ ┗ Common.sourcelink.json
+ ┃ ┃ ┣ Release
+ ┃ ┃ ┃ ┗ net8.0
+ ┃ ┃ ┃ ┃ ┣ ref
+ ┃ ┃ ┃ ┃ ┣ refint
+ ┃ ┃ ┃ ┃ ┣ .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+ ┃ ┃ ┃ ┃ ┣ Common.AssemblyInfo.cs
+ ┃ ┃ ┃ ┃ ┣ Common.AssemblyInfoInputs.cache
+ ┃ ┃ ┃ ┃ ┣ Common.assets.cache
+ ┃ ┃ ┃ ┃ ┣ Common.csproj.AssemblyReference.cache
+ ┃ ┃ ┃ ┃ ┣ Common.GeneratedMSBuildEditorConfig.editorconfig
+ ┃ ┃ ┃ ┃ ┗ Common.GlobalUsings.g.cs
+ ┃ ┃ ┣ Common.csproj.nuget.dgspec.json
+ ┃ ┃ ┣ Common.csproj.nuget.g.props
+ ┃ ┃ ┣ Common.csproj.nuget.g.targets
+ ┃ ┃ ┣ project.assets.json
+ ┃ ┃ ┗ project.nuget.cache
+ ┃ ┣ Class1.cs
+ ┃ ┗ Common.csproj
+ ┣ WebApplication1
+ ┃ ┣ bin
+ ┃ ┃ ┣ Debug
+ ┃ ┃ ┃ ┗ net8.0
+ ┃ ┃ ┃ ┃ ┣ cs
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┗ Microsoft.CodeAnalysis.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┣ de
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┗ Microsoft.CodeAnalysis.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┣ es
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┗ Microsoft.CodeAnalysis.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┣ fr
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┗ Microsoft.CodeAnalysis.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┣ it
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┗ Microsoft.CodeAnalysis.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┣ ja
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┗ Microsoft.CodeAnalysis.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┣ ko
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┗ Microsoft.CodeAnalysis.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┣ pl
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┗ Microsoft.CodeAnalysis.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┣ pt-BR
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┗ Microsoft.CodeAnalysis.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┣ ru
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┗ Microsoft.CodeAnalysis.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┣ runtimes
+ ┃ ┃ ┃ ┃ ┃ ┣ browser
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ lib
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ net8.0
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ System.Text.Encodings.Web.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ browser-wasm
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ nativeassets
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ net8.0
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ e_sqlite3.a
+ ┃ ┃ ┃ ┃ ┃ ┣ linux-arm
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ native
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ libe_sqlite3.so
+ ┃ ┃ ┃ ┃ ┃ ┣ linux-arm64
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ native
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ libe_sqlite3.so
+ ┃ ┃ ┃ ┃ ┃ ┣ linux-armel
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ native
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ libe_sqlite3.so
+ ┃ ┃ ┃ ┃ ┃ ┣ linux-mips64
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ native
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ libe_sqlite3.so
+ ┃ ┃ ┃ ┃ ┃ ┣ linux-musl-arm
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ native
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ libe_sqlite3.so
+ ┃ ┃ ┃ ┃ ┃ ┣ linux-musl-arm64
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ native
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ libe_sqlite3.so
+ ┃ ┃ ┃ ┃ ┃ ┣ linux-musl-s390x
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ native
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ libe_sqlite3.so
+ ┃ ┃ ┃ ┃ ┃ ┣ linux-musl-x64
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ native
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ libe_sqlite3.so
+ ┃ ┃ ┃ ┃ ┃ ┣ linux-ppc64le
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ native
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ libe_sqlite3.so
+ ┃ ┃ ┃ ┃ ┃ ┣ linux-s390x
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ native
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ libe_sqlite3.so
+ ┃ ┃ ┃ ┃ ┃ ┣ linux-x64
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ native
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ libe_sqlite3.so
+ ┃ ┃ ┃ ┃ ┃ ┣ linux-x86
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ native
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ libe_sqlite3.so
+ ┃ ┃ ┃ ┃ ┃ ┣ maccatalyst-arm64
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ native
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ libe_sqlite3.dylib
+ ┃ ┃ ┃ ┃ ┃ ┣ maccatalyst-x64
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ native
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ libe_sqlite3.dylib
+ ┃ ┃ ┃ ┃ ┃ ┣ osx-arm64
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ native
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ libe_sqlite3.dylib
+ ┃ ┃ ┃ ┃ ┃ ┣ osx-x64
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ native
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ libe_sqlite3.dylib
+ ┃ ┃ ┃ ┃ ┃ ┣ win-arm
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ native
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ e_sqlite3.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ win-arm64
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ native
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ e_sqlite3.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ win-x64
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ native
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ e_sqlite3.dll
+ ┃ ┃ ┃ ┃ ┃ ┗ win-x86
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ native
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ e_sqlite3.dll
+ ┃ ┃ ┃ ┃ ┣ tr
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┗ Microsoft.CodeAnalysis.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┣ zh-Hans
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┗ Microsoft.CodeAnalysis.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┣ zh-Hant
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+ ┃ ┃ ┃ ┃ ┃ ┗ Microsoft.CodeAnalysis.Workspaces.resources.dll
+ ┃ ┃ ┃ ┃ ┣ appsettings.Development.json
+ ┃ ┃ ┃ ┃ ┣ appsettings.json
+ ┃ ┃ ┃ ┃ ┣ biznis.dll
+ ┃ ┃ ┃ ┃ ┣ biznis.pdb
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.dll
+ ┃ ┃ ┃ ┃ ┣ ClassLibrary1.pdb
+ ┃ ┃ ┃ ┃ ┣ Common.dll
+ ┃ ┃ ┃ ┃ ┣ Common.pdb
+ ┃ ┃ ┃ ┃ ┣ Humanizer.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.Bcl.AsyncInterfaces.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.Build.Locator.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.Workspaces.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.Data.Sqlite.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.EntityFrameworkCore.Abstractions.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.EntityFrameworkCore.Design.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.EntityFrameworkCore.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.EntityFrameworkCore.Relational.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.EntityFrameworkCore.Sqlite.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.Extensions.Caching.Abstractions.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.Extensions.Caching.Memory.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.Extensions.Configuration.Abstractions.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.Extensions.DependencyInjection.Abstractions.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.Extensions.DependencyInjection.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.Extensions.DependencyModel.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.Extensions.Logging.Abstractions.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.Extensions.Logging.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.Extensions.Options.dll
+ ┃ ┃ ┃ ┃ ┣ Microsoft.Extensions.Primitives.dll
+ ┃ ┃ ┃ ┃ ┣ Mono.TextTemplating.dll
+ ┃ ┃ ┃ ┃ ┣ SQLitePCLRaw.batteries_v2.dll
+ ┃ ┃ ┃ ┃ ┣ SQLitePCLRaw.core.dll
+ ┃ ┃ ┃ ┃ ┣ SQLitePCLRaw.provider.e_sqlite3.dll
+ ┃ ┃ ┃ ┃ ┣ System.CodeDom.dll
+ ┃ ┃ ┃ ┃ ┣ System.Composition.AttributedModel.dll
+ ┃ ┃ ┃ ┃ ┣ System.Composition.Convention.dll
+ ┃ ┃ ┃ ┃ ┣ System.Composition.Hosting.dll
+ ┃ ┃ ┃ ┃ ┣ System.Composition.Runtime.dll
+ ┃ ┃ ┃ ┃ ┣ System.Composition.TypedParts.dll
+ ┃ ┃ ┃ ┃ ┣ System.Diagnostics.DiagnosticSource.dll
+ ┃ ┃ ┃ ┃ ┣ System.IO.Pipelines.dll
+ ┃ ┃ ┃ ┃ ┣ System.Text.Encodings.Web.dll
+ ┃ ┃ ┃ ┃ ┣ System.Text.Json.dll
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.deps.json
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.dll
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.exe
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.pdb
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.runtimeconfig.json
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.staticwebassets.endpoints.json
+ ┃ ┃ ┃ ┃ ┗ WebApplication1.staticwebassets.runtime.json
+ ┃ ┃ ┗ Release
+ ┃ ┃ ┃ ┗ net8.0
+ ┃ ┣ Controllers
+ ┃ ┃ ┗ HomeController.cs
+ ┃ ┣ Models
+ ┃ ┃ ┣ ErrorViewModel.cs
+ ┃ ┃ ┗ UserInfo.cs
+ ┃ ┣ obj
+ ┃ ┃ ┣ Debug
+ ┃ ┃ ┃ ┗ net8.0
+ ┃ ┃ ┃ ┃ ┣ ref
+ ┃ ┃ ┃ ┃ ┃ ┗ WebApplication1.dll
+ ┃ ┃ ┃ ┃ ┣ refint
+ ┃ ┃ ┃ ┃ ┃ ┗ WebApplication1.dll
+ ┃ ┃ ┃ ┃ ┣ scopedcss
+ ┃ ┃ ┃ ┃ ┃ ┣ bundle
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ WebApplication1.styles.css
+ ┃ ┃ ┃ ┃ ┃ ┣ projectbundle
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ WebApplication1.bundle.scp.css
+ ┃ ┃ ┃ ┃ ┃ ┗ Views
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ Shared
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _Layout.cshtml.rz.scp.css
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _UserCard.cshtml.rz.scp.css
+ ┃ ┃ ┃ ┃ ┣ staticwebassets
+ ┃ ┃ ┃ ┃ ┣ .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+ ┃ ┃ ┃ ┃ ┣ ApiEndpoints.json
+ ┃ ┃ ┃ ┃ ┣ apphost.exe
+ ┃ ┃ ┃ ┃ ┣ rjimswa.dswa.cache.json
+ ┃ ┃ ┃ ┃ ┣ rjsmcshtml.dswa.cache.json
+ ┃ ┃ ┃ ┃ ┣ rjsmrazor.dswa.cache.json
+ ┃ ┃ ┃ ┃ ┣ rpswa.dswa.cache.json
+ ┃ ┃ ┃ ┃ ┣ staticwebassets.build.endpoints.json
+ ┃ ┃ ┃ ┃ ┣ staticwebassets.build.json
+ ┃ ┃ ┃ ┃ ┣ staticwebassets.build.json.cache
+ ┃ ┃ ┃ ┃ ┣ staticwebassets.development.json
+ ┃ ┃ ┃ ┃ ┣ staticwebassets.references.upToDateCheck.txt
+ ┃ ┃ ┃ ┃ ┣ staticwebassets.removed.txt
+ ┃ ┃ ┃ ┃ ┣ staticwebassets.upToDateCheck.txt
+ ┃ ┃ ┃ ┃ ┣ WebAppli.7D14BD69.Up2Date
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.AssemblyInfo.cs
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.AssemblyInfoInputs.cache
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.assets.cache
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.csproj.AssemblyReference.cache
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.csproj.BuildWithSkipAnalyzers
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.csproj.CoreCompileInputs.cache
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.csproj.FileListAbsolute.txt
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.dll
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.GeneratedMSBuildEditorConfig.editorconfig
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.genruntimeconfig.cache
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.GlobalUsings.g.cs
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.MvcApplicationPartsAssemblyInfo.cache
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.pdb
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.RazorAssemblyInfo.cache
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.RazorAssemblyInfo.cs
+ ┃ ┃ ┃ ┃ ┗ WebApplication1.sourcelink.json
+ ┃ ┃ ┣ Release
+ ┃ ┃ ┃ ┗ net8.0
+ ┃ ┃ ┃ ┃ ┣ ref
+ ┃ ┃ ┃ ┃ ┣ refint
+ ┃ ┃ ┃ ┃ ┣ .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.AssemblyInfo.cs
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.AssemblyInfoInputs.cache
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.assets.cache
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.csproj.AssemblyReference.cache
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.GeneratedMSBuildEditorConfig.editorconfig
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.GlobalUsings.g.cs
+ ┃ ┃ ┃ ┃ ┣ WebApplication1.RazorAssemblyInfo.cache
+ ┃ ┃ ┃ ┃ ┗ WebApplication1.RazorAssemblyInfo.cs
+ ┃ ┃ ┣ project.assets.json
+ ┃ ┃ ┣ project.nuget.cache
+ ┃ ┃ ┣ WebApplication1.csproj.nuget.dgspec.json
+ ┃ ┃ ┣ WebApplication1.csproj.nuget.g.props
+ ┃ ┃ ┗ WebApplication1.csproj.nuget.g.targets
+ ┃ ┣ Properties
+ ┃ ┃ ┗ launchSettings.json
+ ┃ ┣ Views
+ ┃ ┃ ┣ Home
+ ┃ ┃ ┃ ┣ EditForm.cshtml
+ ┃ ┃ ┃ ┣ Form.cshtml
+ ┃ ┃ ┃ ┣ Index.cshtml
+ ┃ ┃ ┃ ┗ User.cshtml
+ ┃ ┃ ┣ Shared
+ ┃ ┃ ┃ ┣ Error.cshtml
+ ┃ ┃ ┃ ┣ _Layout.cshtml
+ ┃ ┃ ┃ ┣ _Layout.cshtml.css
+ ┃ ┃ ┃ ┣ _UserCard.cshtml
+ ┃ ┃ ┃ ┣ _UserCard.cshtml.css
+ ┃ ┃ ┃ ┗ _ValidationScriptsPartial.cshtml
+ ┃ ┃ ┣ _ViewImports.cshtml
+ ┃ ┃ ┗ _ViewStart.cshtml
+ ┃ ┣ wwwroot
+ ┃ ┃ ┣ css
+ ┃ ┃ ┃ ┗ site.css
+ ┃ ┃ ┣ images
+ ┃ ┃ ┃ ┗ profile.jpg
+ ┃ ┃ ┣ js
+ ┃ ┃ ┃ ┗ site.js
+ ┃ ┃ ┣ lib
+ ┃ ┃ ┃ ┣ bootstrap
+ ┃ ┃ ┃ ┃ ┣ dist
+ ┃ ┃ ┃ ┃ ┃ ┣ css
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-grid.css
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-grid.css.map
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-grid.min.css
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-grid.min.css.map
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-grid.rtl.css
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-grid.rtl.css.map
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-grid.rtl.min.css
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-grid.rtl.min.css.map
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-reboot.css
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-reboot.css.map
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-reboot.min.css
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-reboot.min.css.map
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-reboot.rtl.css
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-reboot.rtl.css.map
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-reboot.rtl.min.css
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-reboot.rtl.min.css.map
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-utilities.css
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-utilities.css.map
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-utilities.min.css
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-utilities.min.css.map
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-utilities.rtl.css
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-utilities.rtl.css.map
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-utilities.rtl.min.css
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap-utilities.rtl.min.css.map
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap.css
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap.css.map
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap.min.css
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap.min.css.map
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap.rtl.css
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap.rtl.css.map
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap.rtl.min.css
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ bootstrap.rtl.min.css.map
+ ┃ ┃ ┃ ┃ ┃ ┗ js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap.bundle.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap.bundle.js.map
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap.bundle.min.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap.bundle.min.js.map
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap.esm.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap.esm.js.map
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap.esm.min.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap.esm.min.js.map
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap.js.map
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ bootstrap.min.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ bootstrap.min.js.map
+ ┃ ┃ ┃ ┃ ┗ LICENSE
+ ┃ ┃ ┃ ┣ jquery
+ ┃ ┃ ┃ ┃ ┣ dist
+ ┃ ┃ ┃ ┃ ┃ ┣ jquery.js
+ ┃ ┃ ┃ ┃ ┃ ┣ jquery.min.js
+ ┃ ┃ ┃ ┃ ┃ ┗ jquery.min.map
+ ┃ ┃ ┃ ┃ ┗ LICENSE.txt
+ ┃ ┃ ┃ ┣ jquery-validation
+ ┃ ┃ ┃ ┃ ┣ dist
+ ┃ ┃ ┃ ┃ ┃ ┣ additional-methods.js
+ ┃ ┃ ┃ ┃ ┃ ┣ additional-methods.min.js
+ ┃ ┃ ┃ ┃ ┃ ┣ jquery.validate.js
+ ┃ ┃ ┃ ┃ ┃ ┗ jquery.validate.min.js
+ ┃ ┃ ┃ ┃ ┗ LICENSE.md
+ ┃ ┃ ┃ ┗ jquery-validation-unobtrusive
+ ┃ ┃ ┃ ┃ ┣ jquery.validate.unobtrusive.js
+ ┃ ┃ ┃ ┃ ┣ jquery.validate.unobtrusive.min.js
+ ┃ ┃ ┃ ┃ ┗ LICENSE.txt
+ ┃ ┃ ┗ favicon.ico
+ ┃ ┣ appsettings.Development.json
+ ┃ ┣ appsettings.json
+ ┃ ┣ Program.cs
+ ┃ ┣ TextFile1.txt
+ ┃ ┣ WebApplication1.csproj
+ ┃ ┗ WebApplication1.csproj.user
+ ┣ .gitattributes
+ ┣ .gitignore
+ ┣ README.md
+ ┗ WebApplication1.sln

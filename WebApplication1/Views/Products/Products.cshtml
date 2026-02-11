@@ -1,0 +1,30 @@
+﻿@model List<Common.Dto.ProductDto>
+
+<h2>Products</h2>
+
+@{
+    string? userId = Context.Request.Cookies["UserPublicId"];
+}
+
+@foreach (var p in Model)
+{
+    <div class="mb-3">
+        <h3>@p.Name</h3>
+        <p>@p.Info</p>
+        <p>Price: @p.Price</p>
+
+
+        @if (!string.IsNullOrEmpty(userId))
+        {
+            <form asp-controller="Products" asp-action="AddToBasket" method="post" class="d-inline">
+                <input asp-for="@p.PublicId" type="hidden" name="productId" value="@p.PublicId" />
+                <input asp-for="@userId" type="hidden" name="userId" value="@userId" />
+                <input asp-for="@p.Name" type="hidden" name="productName" value="@p.Name" />
+                <input asp-for="@p.Price" type="hidden" name="productPrice" value="@p.Price" />
+                <button type="submit" class="btn btn-sm">Add to basket</button>
+            </form>
+        }
+
+        <hr />
+    </div>
+}
