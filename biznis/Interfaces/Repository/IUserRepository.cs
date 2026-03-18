@@ -1,5 +1,4 @@
 ﻿using ClassLibrary1.Entities;
-using System.Threading.Tasks;
 
 namespace biznis.Interfaces.Repository
 {

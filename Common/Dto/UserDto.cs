@@ -1,6 +1,4 @@
 ﻿using Common.Enum;
-using System;
-using System.Collections.Generic;
 
 namespace Common.Dto
 {

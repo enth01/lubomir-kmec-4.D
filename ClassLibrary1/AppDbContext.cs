@@ -10,7 +10,7 @@ namespace ClassLibrary1
         public DbSet<CartItemEntity> CartItems { get; set; }
         public DbSet<OrderEntity> Orders { get; set; }
         public DbSet<CommentEntity> Comments { get; set; }
-        public DbSet<UserAdderssEntity> UserAddresses { get; set; }
+        public DbSet<UserAddressEntity> UserAddresses { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -29,7 +29,12 @@ namespace ClassLibrary1
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<ProductEntity>().HasKey(p => p.PublicId);
+            modelBuilder.Entity<ProductEntity>()
+            .Property(p => p.Categories)
+            .HasConversion(
+                v => string.Join(',', v),
+                v => v == "" ? new List<int>() : v.Split(',', StringSplitOptions.None).Select(int.Parse).ToList()
+            );
         }
     }
 }

@@ -12,8 +12,6 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddScoped<IProductRepository, ProductRepository>();
-builder.Services.AddScoped<IProductService, ProductService>();
 
 
 var app = builder.Build();
@@ -67,19 +65,19 @@ using (var scope = app.Services.CreateScope())
             "Cista voda pre ryby v akvariu.",
             "Priestranna klietka pre skrecka s hrackami."
         };
-        var productCategoriesList = new List<List<CategoryEnum>>
+        var productCategoriesList = new List<List<int>>
         {
-            new List<CategoryEnum> { CategoryEnum.Dogs, CategoryEnum.Food },
-            new List<CategoryEnum> { CategoryEnum.Cats, CategoryEnum.Food },
-            new List<CategoryEnum> { CategoryEnum.Hamsters, CategoryEnum.Food },
-            new List<CategoryEnum> { CategoryEnum.Dogs, CategoryEnum.Toys },
-            new List<CategoryEnum> { CategoryEnum.Cats, CategoryEnum.Toys },
-            new List<CategoryEnum> { CategoryEnum.Hamsters, CategoryEnum.Toys },
-            new List<CategoryEnum> { CategoryEnum.Dogs },
-            new List<CategoryEnum> { CategoryEnum.Fish },
-            new List<CategoryEnum> { CategoryEnum.Hamsters }
+            new() { (int)CategoryEnum.Dogs, (int)CategoryEnum.Food },
+            new() { (int)CategoryEnum.Cats, (int)CategoryEnum.Food },
+            new() { (int)CategoryEnum.Hamsters, (int)CategoryEnum.Food },
+            new() { (int)CategoryEnum.Dogs, (int)CategoryEnum.Toys },
+            new() { (int)CategoryEnum.Cats, (int)CategoryEnum.Toys },
+            new() { (int)CategoryEnum.Hamsters, (int)CategoryEnum.Toys },
+            new() { (int)CategoryEnum.Dogs },
+            new() { (int)CategoryEnum.Fish },
+            new() { (int)CategoryEnum.Hamsters }
         };
-        var productPricesList = new List<float> { 29,99, 24,99, 9,99, 14,99, 12,99, 19,99, 15,99, 4,99, 39,99 };
+        var productPricesList = new List<float> { 29.99f, 24.99f, 9.99f, 14.99f, 12.99f, 19.99f, 15.99f, 4.99f, 39.99f };
         for (int i = 0; i < productNameList.Count; i++)
         {
             var product = new ProductEntity

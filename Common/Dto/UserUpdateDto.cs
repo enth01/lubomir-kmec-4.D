@@ -4,6 +4,8 @@ namespace Common.Dto
 {
     public class UserUpdateDto
     {
+        public Guid PublicId { get; set; }
+
         public string? Name { get; set; }
 
         [EmailAddress]
